@@ -15,19 +15,7 @@
     $$("[data-count]").forEach((el) => (el.textContent = formatCount(+el.dataset.count, +(el.dataset.decimals || 0))));
   }
 
-  /* ---------- Reloj Rosario + año ---------- */
-  const clock = $("[data-clock]");
-  const tick = () => {
-    if (!clock) return;
-    clock.textContent = new Intl.DateTimeFormat("es-AR", {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: false,
-      timeZone: "America/Argentina/Cordoba",
-    }).format(new Date());
-  };
-  tick();
-  setInterval(tick, 15000);
+  /* ---------- Año ---------- */
   const year = $("[data-year]");
   if (year) year.textContent = new Date().getFullYear();
 
@@ -81,14 +69,12 @@
   });
   document.addEventListener("keydown", (e) => e.key === "Escape" && closeMenu());
 
-  /* ---------- Nav que se esconde / dock móvil ---------- */
+  /* ---------- Nav que se esconde ---------- */
   const nav = $("[data-nav]");
-  const dock = $("[data-dock]");
   let lastY = 0;
   const onScroll = (y) => {
     const down = y > lastY && y > 300;
     if (!root.classList.contains("menu-open")) nav.classList.toggle("is-hidden", down);
-    dock?.classList.toggle("is-visible", y > window.innerHeight * 0.6);
     lastY = y;
   };
   if (lenis) lenis.on("scroll", ({ scroll }) => onScroll(scroll));

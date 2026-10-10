@@ -70,7 +70,6 @@
       <img src="/assets/brand/icono-dark-256.png" alt="" class="nav__logo" width="194" height="256">
       <span class="nav__name"><b>Marcelo Pissani</b><small class="mono">Electricista</small></span>
     </a>
-    <span class="nav__status mono"><i class="pulse"></i><span>Disponible · <span data-clock>--:--</span></span></span>
     <nav class="nav__links" aria-label="Secciones">
       <a href="#servicios">Servicios</a>
       <a href="#proceso">Cómo trabaja</a>
@@ -438,17 +437,19 @@
       <img src="/assets/brand/mp-blanco.png" alt="" class="footer__mp" width="400" height="370" loading="lazy">
     </div>
     <div class="footer__bar wrap mono">
+      <span>Sitio web hecho por <a href="https://intelix.com.ar" target="_blank" rel="noopener" class="footer__credit">Intelix</a></span>
       <span>Callao 800, Rosario, Santa Fe · <a href="tel:+543413302237">0341 330-2237</a></span>
       <span>© <span data-year>2026</span> Marcelo Pissani</span>
-      <span>Sitio web hecho por <a href="https://intelix.com.ar" target="_blank" rel="noopener" class="footer__credit">Intelix</a></span>
     </div>
   </footer>
 
-  <!-- Barra fija móvil -->
-  <div class="dock" data-dock>
-    <a href="tel:+543413302237" class="dock__btn">Llamar</a>
-    <a href="https://wa.me/5493413302237?text=Hola%20Marcelo%2C%20tengo%20una%20urgencia%20el%C3%A9ctrica" class="dock__btn dock__btn--wa" target="_blank" rel="noopener">WhatsApp</a>
-  </div>
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/5493413302237?text=Hola%20Marcelo%2C%20te%20escribo%20desde%20tu%20web" class="wa-float" target="_blank" rel="noopener" aria-label="Enviar mensaje por WhatsApp a Marcelo">
+    <span class="wa-float__label">Escribile a Marcelo</span>
+    <span class="wa-float__btn">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C8.86 3 3.03 8.82 3.03 15.99c0 2.29.6 4.53 1.74 6.5L3 29l6.68-1.75a12.97 12.97 0 0 0 6.36 1.62h.01C23.2 28.87 29 23.05 29 15.88 29 8.71 23.2 3 16.04 3Zm0 23.66h-.01c-1.94 0-3.85-.52-5.51-1.51l-.4-.24-3.96 1.04 1.06-3.86-.26-.4a10.7 10.7 0 0 1-1.65-5.71c0-5.96 4.85-10.8 10.82-10.8 5.96 0 10.66 4.75 10.66 10.7 0 5.96-4.8 10.78-10.75 10.78Zm5.92-8.08c-.32-.16-1.92-.95-2.22-1.05-.3-.11-.51-.16-.73.16-.21.32-.84 1.05-1.03 1.27-.19.21-.38.24-.7.08-.32-.16-1.37-.5-2.6-1.6-.96-.86-1.61-1.92-1.8-2.24-.19-.32-.02-.5.14-.66.15-.14.32-.38.48-.56.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.69 0 1.58 1.16 3.12 1.32 3.33.16.21 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.25 1.48.21 2.03.13.62-.09 1.92-.78 2.19-1.54.27-.75.27-1.4.19-1.54-.08-.13-.29-.21-.61-.37Z"/></svg>
+    </span>
+  </a>
 
   <script src="/js/vendor/lenis.min.js"></script>
   <script src="/js/vendor/gsap.min.js"></script>
